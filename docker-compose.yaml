@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  go-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-app
+    ports:
+      - '8181:8181'
+    networks:
+     - go-app-network
+    volumes:
+      - ./:/app
+
+networks:
+  go-app-network:
