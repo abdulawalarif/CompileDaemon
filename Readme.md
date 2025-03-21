@@ -1,0 +1,1 @@
+## Using CompileDaemon for Go project to manage hot reload functionality.

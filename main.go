@@ -19,6 +19,6 @@ func helloHandler(rw http.ResponseWriter, r *http.Request) {
 		log.Println("GET request received")
 		name := r.URL.Query().Get("name")
 
-		rw.Write([]byte(fmt.Sprintf("hi %v\n", name)))
+		rw.Write([]byte(fmt.Sprintf("Hello %v\n", name)))
 	}
 }
